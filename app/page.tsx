@@ -1,5 +1,11 @@
-import { Button } from "@/components/ui/button";
+import { HeroCarousel } from "@/components/HeroCarousel";
 
 export default function Home() {
-  return <div></div>;
+  return (
+    <main>
+      <section>
+        <HeroCarousel />
+      </section>
+    </main>
+  );
 }

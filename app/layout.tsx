@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${jostFont.variable} ${playFairFont.variable} antialiased font-jost`}
+        className={`${jostFont.variable} ${playFairFont.variable} antialiased font-jost overflow-x-hidden`}
       >
         <Header />
         {children}
