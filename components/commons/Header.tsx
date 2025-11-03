@@ -8,12 +8,54 @@ import {
   RiTwitterXFill,
   RiYoutubeFill,
 } from "react-icons/ri";
+
+import React from "react";
+import { cn } from "@/lib/utils";
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "../ui/dropdown-menu";
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "../ui/navigation-menu";
+
+const attorneys: { title: string; href: string }[] = [
+  {
+    title: "Maxwell Frost",
+    href: "/attorney/maxwell-frost",
+  },
+  {
+    title: "Isabella Cruz",
+    href: "/attorney/isabella-cruz",
+  },
+  {
+    title: "Oliver Quinn",
+    href: "/attorney/oliver-quinn",
+  },
+  {
+    title: "Victoria Knight",
+    href: "/attorney/victoria-knight",
+  },
+];
+const services: { title: string; href: string }[] = [
+  {
+    title: "Discrimination Claims",
+    href: "/services/discrimination-claims",
+  },
+  {
+    title: "Criminal Defense",
+    href: "/services/isabella-cruz",
+  },
+  {
+    title: "Immigration Services",
+    href: "/services/immigration-services",
+  },
+  {
+    title: "Personal Injury Claims",
+    href: "/services/personal-injury-claims",
+  },
+];
 
 const Header = () => {
   return (
@@ -31,7 +73,7 @@ const Header = () => {
               <p>info@lawbusiness.com.br</p>
             </div>
           </div>
-          <div>
+          <div className="top-head">
             <ul className="flex items-center gap-x-2">
               <li className="text-primary-foreground">
                 <a href="#">
@@ -66,43 +108,73 @@ const Header = () => {
         <Link href="/">
           <Logo />
         </Link>
-        <div>
-          <nav>
-            <ul className="flex items-center gap-x-8 text-lg">
-              <li>
-                <Link href="/">Home</Link>
-              </li>
-              <li>
-                <DropdownMenu>
-                  <DropdownMenuTrigger className="cursor-pointer">
-                    Attorneys
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent>
-                    <DropdownMenuItem>Maxwell Prost</DropdownMenuItem>
-                    <DropdownMenuItem>Isabela Cruz</DropdownMenuItem>
-                    <DropdownMenuItem>Oliver Quinn</DropdownMenuItem>
-                    <DropdownMenuItem>Victoria Knight</DropdownMenuItem>
-                  </DropdownMenuContent>
-                </DropdownMenu>
-              </li>
-              <li>
-                <DropdownMenu>
-                  <DropdownMenuTrigger className="cursor-pointer">
-                    Services
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent>
-                    <DropdownMenuItem>Profile</DropdownMenuItem>
-                    <DropdownMenuItem>Billing</DropdownMenuItem>
-                    <DropdownMenuItem>Team</DropdownMenuItem>
-                    <DropdownMenuItem>Subscription</DropdownMenuItem>
-                  </DropdownMenuContent>
-                </DropdownMenu>
-              </li>
-              <li>
-                <Link href="/">Contacts</Link>
-              </li>
-            </ul>
-          </nav>
+        <div className="menu-navigation">
+          <NavigationMenu>
+            <NavigationMenuList className="flex items-center gap-x-6">
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link
+                    href="/"
+                    className="hover:bg-transparent focus:bg-transparent hover:text-primary font-medium font-playfair"
+                  >
+                    Home
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem className="ITEMS">
+                <NavigationMenuTrigger className="font-playfair">
+                  Attorney
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="grid w-[200px] gap-3 p-1 md:w-[300px] md:grid-cols-2 lg:w-[400px]">
+                    {attorneys.map((attorney) => (
+                      <li key={attorney.title}>
+                        <NavigationMenuLink asChild>
+                          <Link
+                            href={attorney.href}
+                            className="hover:bg-transparent focus:bg-transparent hover:text-primary"
+                          >
+                            {attorney.title}
+                          </Link>
+                        </NavigationMenuLink>
+                      </li>
+                    ))}
+                  </ul>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger className="font-playfair">
+                  Services
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="grid w-[200px] gap-3 p-1 md:w-[300px] md:grid-cols-2 lg:w-[400px]">
+                    {services.map((service) => (
+                      <li key={service.title}>
+                        <NavigationMenuLink asChild>
+                          <Link
+                            href={service.href}
+                            className="hover:bg-transparent focus:bg-transparent hover:text-primary"
+                          >
+                            {service.title}
+                          </Link>
+                        </NavigationMenuLink>
+                      </li>
+                    ))}
+                  </ul>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link
+                    href="/contact"
+                    className="hover:bg-transparent focus:bg-transparent hover:text-primary font-medium font-playfair"
+                  >
+                    Contact
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
         </div>
       </div>
     </header>

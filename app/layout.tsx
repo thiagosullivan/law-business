@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Jost } from "next/font/google";
+import { Jost, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/commons/Header";
 
@@ -7,16 +7,10 @@ const jostFont = Jost({
   variable: "--font-jost",
   subsets: ["latin"],
 });
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
+const playFairFont = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Law Business",
@@ -30,7 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jostFont.variable} antialiased`}>
+      <body
+        className={`${jostFont.variable} ${playFairFont.variable} antialiased font-jost`}
+      >
         <Header />
         {children}
       </body>
