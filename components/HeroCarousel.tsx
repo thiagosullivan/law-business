@@ -1,4 +1,4 @@
-import { CarouselHero } from "@/types/carouselTypes";
+import { CarouselHeroTypes } from "@/types/carouselTypes";
 import {
   Carousel,
   CarouselContent,
@@ -9,7 +9,7 @@ import {
 import { Button } from "./ui/button";
 import Link from "next/link";
 
-const carouselImgs: CarouselHero[] = [
+const carouselImgs: CarouselHeroTypes[] = [
   {
     url: "https://law-business.cmsmasters.studio/wp-content/uploads/revslider/slider-1/home-1.jpg",
     icon: undefined,
@@ -39,44 +39,46 @@ const carouselImgs: CarouselHero[] = [
 ];
 export function HeroCarousel() {
   return (
-    <Carousel className="w-full max-w-dvw max-h-[650px] relative">
-      <CarouselContent>
-        {carouselImgs.map((item, index) => (
-          <CarouselItem
-            key={index}
-            className="lg:h-[700px] bg-cover"
-            style={{ backgroundImage: `url(${item.url})` }}
-          >
-            <div className="centered-element flex items-center h-full text-white">
-              <div>
-                <h2 className="font-playfair text-6xl mb-3">{item.title}</h2>
-                <h3
-                  className={`font-playfair text-3xl mb-6 w-fit ${
-                    item.highlight && "bg-primary px-4"
-                  }`}
-                >
-                  {item.subtitle}
-                </h3>
-                {item.text && (
-                  <p className="mb-10 max-w-[400px]">{item.text}</p>
-                )}
-                <Button asChild>
-                  <Link
-                    href={item.buttonUrl ? item.buttonUrl : "/"}
-                    className="rounded-none text-lg! font-playfair py-4! px-8! h-full"
+    <section className="w-full max-w-dvw max-h-[700px] relative mb-24">
+      <Carousel>
+        <CarouselContent>
+          {carouselImgs.map((item, index) => (
+            <CarouselItem
+              key={index}
+              className="lg:h-[700px] bg-cover"
+              style={{ backgroundImage: `url(${item.url})` }}
+            >
+              <div className="centered-element px-14 flex items-center h-full text-white">
+                <div>
+                  <h2 className="font-playfair text-6xl mb-3">{item.title}</h2>
+                  <h3
+                    className={`font-playfair text-3xl mb-6 w-fit ${
+                      item.highlight && "bg-primary px-4"
+                    }`}
                   >
-                    {item.buttonText}
-                  </Link>
-                </Button>
+                    {item.subtitle}
+                  </h3>
+                  {item.text && (
+                    <p className="mb-10 max-w-[400px]">{item.text}</p>
+                  )}
+                  <Button asChild>
+                    <Link
+                      href={item.buttonUrl ? item.buttonUrl : "/"}
+                      className="rounded-none text-lg! font-playfair py-4! px-8! h-full"
+                    >
+                      {item.buttonText}
+                    </Link>
+                  </Button>
+                </div>
               </div>
-            </div>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-      <div className="absolute top-1/2 -translate-y-1/2 w-full">
-        <CarouselPrevious className="left-4" />
-        <CarouselNext className="right-4" />
-      </div>
-    </Carousel>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <div className="absolute top-1/2 -translate-y-1/2 w-full">
+          <CarouselPrevious className="left-4" />
+          <CarouselNext className="right-4" />
+        </div>
+      </Carousel>
+    </section>
   );
 }

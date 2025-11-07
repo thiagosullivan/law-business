@@ -1,4 +1,4 @@
-export interface CarouselHero {
+export interface CarouselHeroTypes {
   url: string;
   icon?: string;
   title: string;
