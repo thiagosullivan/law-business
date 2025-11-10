@@ -74,27 +74,27 @@ const Header = () => {
           <div className="top-head">
             <ul className="flex items-center gap-x-2">
               <li className="text-primary-foreground">
-                <a href="#">
+                <a href="#" rel="noopener noreferrer" target="_blank">
                   <RiFacebookFill />
                 </a>
               </li>
               <li className="text-primary-foreground">
-                <a href="#">
+                <a href="#" rel="noopener noreferrer" target="_blank">
                   <RiTwitterXFill />
                 </a>
               </li>
               <li className="text-primary-foreground">
-                <a href="#">
+                <a href="#" rel="noopener noreferrer" target="_blank">
                   <RiLinkedinFill />
                 </a>
               </li>
               <li className="text-primary-foreground">
-                <a href="#">
+                <a href="#" rel="noopener noreferrer" target="_blank">
                   <RiYoutubeFill />
                 </a>
               </li>
               <li className="text-primary-foreground">
-                <a href="#">
+                <a href="#" rel="noopener noreferrer" target="_blank">
                   <RiInstagramLine />
                 </a>
               </li>
