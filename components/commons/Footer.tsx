@@ -65,10 +65,10 @@ const Footer = () => {
                 <FaYoutube />
               </Link>
               <Link
-                href="https://instagram.com"
-                className="hover:text-primary! text-gray-500! transition duration-200 p-2 border border-gray-600 hover:border-primary"
+                href="https://youtube.com"
+                className="hover:text-primary transition duration-200 p-2 border border-gray-600 hover:border-primary"
               >
-                <FaInstagram className="" />
+                <FaInstagram />
               </Link>
             </div>
           </div>
@@ -224,7 +224,12 @@ const Footer = () => {
           </div>
         </div>
         <div className="pt-8 text-sm text-center flex items-center justify-center gap-x-2">
-          <a href="https://google.com.br" className="text-primary">
+          <a
+            href="https://google.com.br"
+            className="text-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             ATS - Web Solutions
           </a>
           <p className="text-muted-foreground">

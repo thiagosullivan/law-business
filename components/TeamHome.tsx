@@ -34,7 +34,7 @@ const teamData: TeamData[] = [
     link: "/",
     socials: {
       facebook: "https://facebook.com",
-      instagram: "https://instagram.com",
+      instagram: "https://www.instagram.com/",
       linkedin: "https://linkedin.com",
     },
   },
@@ -46,7 +46,7 @@ const teamData: TeamData[] = [
     link: "/",
     socials: {
       facebook: "https://facebook.com",
-      instagram: "https://instagram.com",
+      instagram: "https://www.instagram.com/faker/",
       linkedin: "https://linkedin.com",
     },
   },
@@ -58,7 +58,7 @@ const teamData: TeamData[] = [
     link: "/",
     socials: {
       facebook: "https://facebook.com",
-      instagram: "https://instagram.com",
+      instagram: "https://www.instagram.com/faker/",
       linkedin: "https://linkedin.com",
     },
   },
@@ -70,7 +70,7 @@ const teamData: TeamData[] = [
     link: "/",
     socials: {
       facebook: "https://facebook.com",
-      instagram: "https://instagram.com",
+      instagram: "https://www.instagram.com/faker/",
       linkedin: "https://linkedin.com",
     },
   },
@@ -82,7 +82,7 @@ const teamData: TeamData[] = [
     link: "/",
     socials: {
       facebook: "https://facebook.com",
-      instagram: "https://instagram.com",
+      instagram: "https://www.instagram.com/faker/",
       linkedin: "https://linkedin.com",
     },
   },
@@ -94,7 +94,7 @@ const teamData: TeamData[] = [
     link: "/",
     socials: {
       facebook: "https://facebook.com",
-      instagram: "https://instagram.com",
+      instagram: "https://www.instagram.com/faker/",
       linkedin: "https://linkedin.com",
     },
   },
@@ -139,26 +139,35 @@ const TeamHome = () => {
                         alt={team.name}
                         fill
                         style={{ objectFit: "cover" }}
+                        sizes="(max-width: 768px) 50vw, (max-width: 1024px) 25vw, 285px"
+                        priority={index < 4}
                       />
                       <div className="bg-primary/90 absolute w-full h-full flex items-center justify-center gap-x-5 opacity-0 group-hover:opacity-100 transition duration-300 z-10 ">
-                        <Link
+                        <a
                           href={team.socials.facebook}
                           className="flex items-center gap-x-4 text-white text-2xl hover:text-white/80"
+                          target="_blank"
+                          rel="noopener noreferrer"
                         >
                           <FaFacebookF />
-                        </Link>
-                        <Link
+                        </a>
+                        <a
                           href={team.socials.instagram}
                           className="flex items-center gap-x-4 text-white text-2xl hover:text-white/80"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          suppressHydrationWarning={true}
                         >
-                          <FaInstagram className="text-white" />
-                        </Link>
-                        <Link
+                          <FaInstagram />
+                        </a>
+                        <a
                           href={team.socials.linkedin}
                           className="flex items-center gap-x-4 text-white text-2xl hover:text-white/80"
+                          target="_blank"
+                          rel="noopener noreferrer"
                         >
                           <FaLinkedinIn />
-                        </Link>
+                        </a>
                       </div>
                     </div>
                     <div className="border border-gray-300 bg-white p-4 w-[235px] absolute bottom-[0%] left-[50%] -translate-x-[50%] text-center z-20">
