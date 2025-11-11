@@ -3,6 +3,7 @@ import AreasHome from "@/components/AreasHome";
 import { HeroCarousel } from "@/components/HeroCarousel";
 import NewsHome from "@/components/NewsHome";
 import PartnersHome from "@/components/PartnersHome";
+import TeamHome from "@/components/TeamHome";
 import TestimonialsHome from "@/components/TestimonialsHome";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutHome />
       <AreasHome />
       <TestimonialsHome />
+      <TeamHome />
       <NewsHome />
       <PartnersHome />
     </main>

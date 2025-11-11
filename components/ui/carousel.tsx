@@ -4,7 +4,7 @@ import * as React from "react";
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from "embla-carousel-react";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Button } from "./button";
@@ -201,6 +201,30 @@ function CarouselPrevious({
   );
 }
 
+function CarouselPreviousTwo({
+  className,
+  variant = "outline",
+  size = "icon",
+  ...props
+}: React.ComponentProps<typeof Button>) {
+  const { orientation, scrollPrev, canScrollPrev } = useCarousel();
+
+  return (
+    <Button
+      data-slot="carousel-previous"
+      variant={variant}
+      size={size}
+      className={cn("size-8 rounded-none border border-gray-300", className)}
+      disabled={!canScrollPrev}
+      onClick={scrollPrev}
+      {...props}
+    >
+      <ChevronLeft className="scale-125" />
+      <span className="sr-only">Previous slide</span>
+    </Button>
+  );
+}
+
 function CarouselNext({
   className,
   variant = "outline",
@@ -231,11 +255,37 @@ function CarouselNext({
   );
 }
 
+function CarouselNextTwo({
+  className,
+  variant = "outline",
+  size = "icon",
+  ...props
+}: React.ComponentProps<typeof Button>) {
+  const { orientation, scrollNext, canScrollNext } = useCarousel();
+
+  return (
+    <Button
+      data-slot="carousel-next"
+      variant={variant}
+      size={size}
+      className={cn("size-8 rounded-none border border-gray-300", className)}
+      disabled={!canScrollNext}
+      onClick={scrollNext}
+      {...props}
+    >
+      <ChevronRight className="scale-125" />
+      <span className="sr-only">Next slide</span>
+    </Button>
+  );
+}
+
 export {
   type CarouselApi,
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselPrevious,
+  CarouselPreviousTwo,
   CarouselNext,
+  CarouselNextTwo,
 };
