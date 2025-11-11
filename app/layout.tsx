@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Jost, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/commons/Header";
+import Footer from "@/components/commons/Footer";
 
 const jostFont = Jost({
   variable: "--font-jost",
@@ -29,6 +30,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
