@@ -74,13 +74,13 @@ const AreasHome = () => {
               />
               <Link
                 href={area.title}
-                className="flex items-center font-playfair text-2xl mb-1 hover:text-primary"
+                className="flex items-center font-playfair text-2xl mb-1 hover:text-primary transition duration-200"
               >
                 → {area.title}
               </Link>
               <Link
                 href={area.category}
-                className="text-muted-foreground ml-8 hover:text-primary"
+                className="text-muted-foreground ml-8 hover:text-primary transition duration-200"
               >
                 {area.category}
               </Link>
@@ -89,7 +89,7 @@ const AreasHome = () => {
         </div>
         <Link
           href="/"
-          className="bg-primary hover:bg-primary/90 transition-all w-[215px] h-[60px] flex justify-center items-center text-white font-playfair text-lg mx-auto mb-12"
+          className="bg-primary transition-all w-[215px] h-[60px] flex justify-center items-center text-white font-playfair text-lg mx-auto mb-12 hover:bg-neutral-900 transition duration-200"
         >
           View All Cases
         </Link>

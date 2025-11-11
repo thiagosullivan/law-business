@@ -64,7 +64,7 @@ export function HeroCarousel() {
                   <Button asChild>
                     <Link
                       href={item.buttonUrl ? item.buttonUrl : "/"}
-                      className="rounded-none text-lg! font-playfair py-4! px-8! h-full"
+                      className="rounded-none text-lg! font-playfair py-4! px-8! h-full hover:bg-white hover:text-neutral-800 transition duration-200"
                     >
                       {item.buttonText}
                     </Link>

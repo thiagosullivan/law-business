@@ -70,7 +70,7 @@ const NewsHome = () => {
         </div>
         <Link
           href="/"
-          className="bg-primary hover:bg-primary/90 transition-all w-[215px] h-[60px] flex justify-center items-center text-white font-playfair text-lg mx-auto mb-12"
+          className="bg-primary hover:bg-neutral-900 w-[215px] h-[60px] flex justify-center items-center text-white font-playfair text-lg mx-auto mb-12 transition duration-200"
         >
           View All Cases
         </Link>

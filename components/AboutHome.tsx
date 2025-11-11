@@ -60,7 +60,7 @@ const AboutHome = () => {
                 </p>
                 <Link
                   href="/"
-                  className="text-white bg-primary hover:bg-primary/80 transition-all text-lg w-[200px] h-[55px] flex items-center justify-center"
+                  className="text-white bg-primary transition-all text-lg w-[200px] h-[55px] flex items-center justify-center hover:bg-neutral-900 transition duration-200"
                 >
                   Who We Are
                 </Link>

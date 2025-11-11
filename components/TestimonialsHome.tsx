@@ -43,7 +43,10 @@ const TestimonialsHome = () => {
         <div className="font-playfair">
           <h3 className="text-muted-foreground text-lg mb-4">Testimonials</h3>
           <p className="text-4xl pb-8">What Our Clients Say</p>
-          <Link href="/" className="text-lg hover:text-primary font-medium">
+          <Link
+            href="/"
+            className="text-lg hover:text-primary font-medium transition duration-200"
+          >
             Share Your Story →
           </Link>
         </div>

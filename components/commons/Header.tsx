@@ -113,7 +113,7 @@ const Header = () => {
                 <NavigationMenuLink asChild>
                   <Link
                     href="/"
-                    className="hover:bg-transparent focus:bg-transparent hover:text-primary font-medium font-playfair"
+                    className="hover:bg-transparent focus:bg-transparent hover:text-primary font-medium font-playfair transition duration-200"
                   >
                     Home
                   </Link>
@@ -130,7 +130,7 @@ const Header = () => {
                         <NavigationMenuLink asChild>
                           <Link
                             href={attorney.href}
-                            className="hover:bg-transparent focus:bg-transparent hover:text-primary"
+                            className="hover:bg-transparent focus:bg-transparent hover:text-primary transition duration-200"
                           >
                             {attorney.title}
                           </Link>
@@ -151,7 +151,7 @@ const Header = () => {
                         <NavigationMenuLink asChild>
                           <Link
                             href={service.href}
-                            className="hover:bg-transparent focus:bg-transparent hover:text-primary"
+                            className="hover:bg-transparent focus:bg-transparent hover:text-primary transition duration-200"
                           >
                             {service.title}
                           </Link>
@@ -165,7 +165,7 @@ const Header = () => {
                 <NavigationMenuLink asChild>
                   <Link
                     href="/contact"
-                    className="hover:bg-transparent focus:bg-transparent hover:text-primary font-medium font-playfair"
+                    className="hover:bg-transparent focus:bg-transparent hover:text-primary font-medium font-playfair transition duration-200"
                   >
                     Contact
                   </Link>

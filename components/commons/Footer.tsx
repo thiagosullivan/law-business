@@ -20,7 +20,7 @@ const Footer = () => {
           </p>
           <Link
             href="/"
-            className="bg-primary text-gray-200 w-[190px] h-[60px] flex items-center justify-center text-lg rounded-xs"
+            className="bg-primary text-gray-200 w-[190px] h-[60px] flex items-center justify-center text-lg rounded-xs hover:bg-white hover:text-neutral-900 transition duration-200"
           >
             Contact Us
           </Link>
@@ -42,33 +42,33 @@ const Footer = () => {
             <div className="flex gap-2">
               <Link
                 href="https://facebook.com"
-                className="p-2 border border-gray-600"
+                className="hover:text-primary transition duration-200 p-2 border border-gray-600 hover:border-primary"
               >
                 <FaFacebookF />
               </Link>
               <Link
                 href="https://twitter.com"
-                className="p-2 border border-gray-600"
+                className="hover:text-primary transition duration-200 p-2 border border-gray-600 hover:border-primary"
               >
                 <FaXTwitter />
               </Link>
               <Link
                 href="https://linkedin.com"
-                className="p-2 border border-gray-600"
+                className="hover:text-primary transition duration-200 p-2 border border-gray-600 hover:border-primary"
               >
                 <FaLinkedinIn />
               </Link>
               <Link
                 href="https://youtube.com"
-                className="p-2 border border-gray-600"
+                className="hover:text-primary transition duration-200 p-2 border border-gray-600 hover:border-primary"
               >
                 <FaYoutube />
               </Link>
               <Link
                 href="https://instagram.com"
-                className="p-2 border border-gray-600"
+                className="hover:text-primary! text-gray-500! transition duration-200 p-2 border border-gray-600 hover:border-primary"
               >
-                <FaInstagram />
+                <FaInstagram className="" />
               </Link>
             </div>
           </div>
@@ -77,25 +77,60 @@ const Footer = () => {
             <div className="border-b-2 border-primary w-5 mb-6" />
             <ul className="flex flex-col gap-3">
               <li>
-                <Link href="/">Discrimation Claims</Link>
+                <Link
+                  className="hover:text-primary transition duration-200"
+                  href="/"
+                >
+                  Discrimation Claims
+                </Link>
               </li>
               <li>
-                <Link href="/">Criminal Defense</Link>
+                <Link
+                  className="hover:text-primary transition duration-200"
+                  href="/"
+                >
+                  Criminal Defense
+                </Link>
               </li>
               <li>
-                <Link href="/">Immigration Services</Link>
+                <Link
+                  className="hover:text-primary transition duration-200"
+                  href="/"
+                >
+                  Immigration Services
+                </Link>
               </li>
               <li>
-                <Link href="/">Personal Injury Claims</Link>
+                <Link
+                  className="hover:text-primary transition duration-200"
+                  href="/"
+                >
+                  Personal Injury Claims
+                </Link>
               </li>
               <li>
-                <Link href="/">Business Transactions</Link>
+                <Link
+                  className="hover:text-primary transition duration-200"
+                  href="/"
+                >
+                  Business Transactions
+                </Link>
               </li>
               <li>
-                <Link href="/">Family Law and Divorce</Link>
+                <Link
+                  className="hover:text-primary transition duration-200"
+                  href="/"
+                >
+                  Family Law and Divorce
+                </Link>
               </li>
               <li>
-                <Link href="/">Estate Planning</Link>
+                <Link
+                  className="hover:text-primary transition duration-200"
+                  href="/"
+                >
+                  Estate Planning
+                </Link>
               </li>
             </ul>
           </div>
@@ -104,28 +139,68 @@ const Footer = () => {
             <div className="border-b-2 border-primary w-5 mb-6" />
             <ul className="flex flex-col gap-3">
               <li>
-                <Link href="/">Maxwell Frost</Link>
+                <Link
+                  className="hover:text-primary transition duration-200"
+                  href="/"
+                >
+                  Maxwell Frost
+                </Link>
               </li>
               <li>
-                <Link href="/">Isabella Cruz</Link>
+                <Link
+                  className="hover:text-primary transition duration-200"
+                  href="/"
+                >
+                  Isabella Cruz
+                </Link>
               </li>
               <li>
-                <Link href="/">Oliver Quinn</Link>
+                <Link
+                  className="hover:text-primary transition duration-200"
+                  href="/"
+                >
+                  Oliver Quinn
+                </Link>
               </li>
               <li>
-                <Link href="/">Victoria Knight</Link>
+                <Link
+                  className="hover:text-primary transition duration-200"
+                  href="/"
+                >
+                  Victoria Knight
+                </Link>
               </li>
               <li>
-                <Link href="/">Dominic Archer</Link>
+                <Link
+                  className="hover:text-primary transition duration-200"
+                  href="/"
+                >
+                  Dominic Archer
+                </Link>
               </li>
               <li>
-                <Link href="/">Eleanor Wolfe</Link>
+                <Link
+                  className="hover:text-primary transition duration-200"
+                  href="/"
+                >
+                  Eleanor Wolfe
+                </Link>
               </li>
               <li>
-                <Link href="/">Alexandra Sterling</Link>
+                <Link
+                  className="hover:text-primary transition duration-200"
+                  href="/"
+                >
+                  Alexandra Sterling
+                </Link>
               </li>
               <li>
-                <Link href="/">Nathanial Blackwood</Link>
+                <Link
+                  className="hover:text-primary transition duration-200"
+                  href="/"
+                >
+                  Nathanial Blackwood
+                </Link>
               </li>
             </ul>
           </div>
