@@ -33,7 +33,7 @@ const aboutData: AboutCardsTypes[] = [
 const AboutHome = () => {
   return (
     <section className="border-b border-gray-300 mb-24 px-4">
-      <div className="centered-element">
+      <div className="centered-element mx-auto">
         <div className="mb-24">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-8 mb-24">
             {aboutData.map((item, index) => (
