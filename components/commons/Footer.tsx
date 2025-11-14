@@ -12,7 +12,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-950 pt-24 pb-4">
+    <footer className="bg-secondary-foreground pt-24 pb-4">
       <div className="centered-element">
         <div className="font-playfair flex items-center justify-between pb-24 border-b border-gray-700">
           <p className="text-gray-200 text-4xl max-w-[625px]">

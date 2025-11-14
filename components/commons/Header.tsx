@@ -121,7 +121,7 @@ const Header = () => {
               </NavigationMenuItem>
               <NavigationMenuItem className="ITEMS">
                 <NavigationMenuTrigger className="font-playfair">
-                  Attorney
+                  <Link href="/attorneys">Attorney</Link>
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[200px] gap-3 p-1 md:w-[300px] md:grid-cols-2 lg:w-[400px]">
