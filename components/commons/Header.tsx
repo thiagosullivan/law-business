@@ -21,19 +21,19 @@ import {
 const attorneys: { title: string; href: string }[] = [
   {
     title: "Maxwell Frost",
-    href: "/attorney/maxwell-frost",
+    href: "/attorneys/maxwell-frost",
   },
   {
     title: "Isabella Cruz",
-    href: "/attorney/isabella-cruz",
+    href: "/attorneys/isabella-cruz",
   },
   {
     title: "Oliver Quinn",
-    href: "/attorney/oliver-quinn",
+    href: "/attorneys/oliver-quinn",
   },
   {
     title: "Victoria Knight",
-    href: "/attorney/victoria-knight",
+    href: "/attorneys/victoria-knight",
   },
 ];
 const services: { title: string; href: string }[] = [
