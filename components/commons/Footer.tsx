@@ -141,7 +141,7 @@ const Footer = () => {
               <li>
                 <Link
                   className="hover:text-primary transition duration-200"
-                  href="/"
+                  href="/attorneys/victoria-knight"
                 >
                   Maxwell Frost
                 </Link>
@@ -149,7 +149,7 @@ const Footer = () => {
               <li>
                 <Link
                   className="hover:text-primary transition duration-200"
-                  href="/"
+                  href="/attorneys/victoria-knight"
                 >
                   Isabella Cruz
                 </Link>
@@ -157,7 +157,7 @@ const Footer = () => {
               <li>
                 <Link
                   className="hover:text-primary transition duration-200"
-                  href="/"
+                  href="/attorneys/victoria-knight"
                 >
                   Oliver Quinn
                 </Link>
@@ -165,7 +165,7 @@ const Footer = () => {
               <li>
                 <Link
                   className="hover:text-primary transition duration-200"
-                  href="/"
+                  href="/attorneys/victoria-knight"
                 >
                   Victoria Knight
                 </Link>
@@ -173,7 +173,7 @@ const Footer = () => {
               <li>
                 <Link
                   className="hover:text-primary transition duration-200"
-                  href="/"
+                  href="/attorneys/victoria-knight"
                 >
                   Dominic Archer
                 </Link>
@@ -181,7 +181,7 @@ const Footer = () => {
               <li>
                 <Link
                   className="hover:text-primary transition duration-200"
-                  href="/"
+                  href="/attorneys/victoria-knight"
                 >
                   Eleanor Wolfe
                 </Link>
@@ -189,7 +189,7 @@ const Footer = () => {
               <li>
                 <Link
                   className="hover:text-primary transition duration-200"
-                  href="/"
+                  href="/attorneys/victoria-knight"
                 >
                   Alexandra Sterling
                 </Link>
@@ -197,7 +197,7 @@ const Footer = () => {
               <li>
                 <Link
                   className="hover:text-primary transition duration-200"
-                  href="/"
+                  href="/attorneys/victoria-knight"
                 >
                   Nathanial Blackwood
                 </Link>

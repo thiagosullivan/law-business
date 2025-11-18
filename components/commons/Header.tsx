@@ -21,15 +21,15 @@ import {
 const attorneys: { title: string; href: string }[] = [
   {
     title: "Maxwell Frost",
-    href: "/attorneys/maxwell-frost",
+    href: "/attorneys/victoria-knight",
   },
   {
     title: "Isabella Cruz",
-    href: "/attorneys/isabella-cruz",
+    href: "/attorneys/victoria-knight",
   },
   {
     title: "Oliver Quinn",
-    href: "/attorneys/oliver-quinn",
+    href: "/attorneys/victoria-knight",
   },
   {
     title: "Victoria Knight",
